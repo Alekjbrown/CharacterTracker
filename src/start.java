@@ -62,15 +62,16 @@ public class start {
 		System.out.println("How would you like to search?");
 		System.out.println("*  1. -- Search by name");
 		System.out.println("*  2. -- Search by race");
+		System.out.println("selection:");
 		int selection = in.nextInt();
 		in.nextLine();
 		List<NPC> found;
 		if(selection == 1) {
-			System.out.print("Enter the NPC name");
+			System.out.print("Enter the NPC name: ");
 			String npcName = in.nextLine();
 			found = NH.searchByName(npcName);
 		}else {
-			System.out.print("Enter the NPC race");
+			System.out.print("Enter the NPC race: ");
 			String npcRace = in.nextLine();
 			found = NH.searchByRace(npcRace);
 		}
@@ -99,15 +100,16 @@ public class start {
 		System.out.println("How would you like to search?");
 		System.out.println("*  1. -- Search by name");
 		System.out.println("*  2. -- Search by race");
+		System.out.println("selection: ");
 		int selection = in.nextInt();
 		in.nextLine();
 		List<NPC> found;
 		if(selection == 1) {
-			System.out.print("Enter the NPC name");
+			System.out.print("Enter the NPC name: ");
 			String npcName = in.nextLine();
 			found = NH.searchByName(npcName);
 		}else {
-			System.out.print("Enter the NPC race");
+			System.out.print("Enter the NPC race: ");
 			String npcRace = in.nextLine();
 			found = NH.searchByRace(npcRace);
 		}
@@ -122,9 +124,10 @@ public class start {
 			
 			NPC toEdit = NH.searchByID(idToEdit);
 			System.out.println("Retrieved " + toEdit.Describe());
-			System.out.print("*  1. -- Update Name");
-			System.out.print("*  2. -- Update Race");
-			System.out.print("*  3. -- Update Age");
+			System.out.println("*  1. -- Update Name");
+			System.out.println("*  2. -- Update Race");
+			System.out.println("*  3. -- Update Age");
+			System.out.println("selection: ");
 			selection = in.nextInt();
 			in.nextLine();
 			
